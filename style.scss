@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  & input[type='text'] {
+    width: 20%;
+  }
+}
+
+.point-total {
+  display: flex;
+  .total {
+    margin-left: 3px;
+  }
+}
+
+.btn {
+  width: 10%;
+}

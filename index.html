@@ -5,50 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- <script src="https://kit.fontawesome.com/875f43dce7.js" crossorigin="anonymous"></script> -->
-    <title>Expanding Cards</title>
+    <title>NHL STATS</title>
   </head>
   <body>
-    <div class="container">
-      <div
-        class="panel active"
-        style="
-          background-image: url(https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
-        "
-      >
-        <h3>Explore the world</h3>
+    <div class="stats-container">
+      <h1>Players</h1>
+      <label for="goals">Goals</label>
+      <input type="text" placeholder="Each worth 8.5pts" name="goals" />
+      <label for="assists">Assists</label>
+      <input type="text" placeholder="Each worth 5pts" name="assists" />
+      <label for="sog">Shots on goal</label>
+      <input type="text" placeholder="Each worth 1.5pts" name="sog" />
+      <label for="blksht">Blocked shots</label>
+      <input type="text" placeholder="Each worth 1.3pts" name="blksht" />
+      <label for="shp">Shorthanded points</label>
+      <input type="text" placeholder="Each worth 2pts" name="shp" />
+      <label for="5plussht">5 Plus Shots (worth 3pts)</label>
+      <input type="checkbox" name="5plussht" id="shot5" />
+      <label for="hatrick">Hatrick (worth 3pts)</label>
+      <input type="checkbox" name="hatrick" id="hatrick" />
+      <label for="3plusblksht">3 Plus Blocked Shots (worth 3pts)</label>
+      <input type="checkbox" name="3plusblksht" id="blkshot3" />
+      <label for="3pluspnt">3 Plus Points (worth 3pts)</label>
+      <input type="checkbox" name="3pluspnt" id="points3" />
+      <div class="point-total">
+        <p>Point Total:</p>
+        <p class="total">0</p>
       </div>
-      <div
-        class="panel"
-        style="
-          background-image: url(https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80);
-        "
-      >
-        <h3>Explore the world</h3>
-      </div>
-      <div
-        class="panel"
-        style="
-          background-image: url(https://images.unsplash.com/photo-1537151769678-eb003fb3a153?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fGRvZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
-        "
-      >
-        <h3>Explore the world</h3>
-      </div>
-      <div
-        class="panel"
-        style="
-          background-image: url(https://images.unsplash.com/photo-1560525821-d5615ef80c69?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1234&q=80);
-        "
-      >
-        <h3>Explore the world</h3>
-      </div>
-      <div
-        class="panel"
-        style="
-          background-image: url(https://images.unsplash.com/photo-1567568121706-61b273a5a778?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA5fHxkb2d8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
-        "
-      >
-        <h3>Explore the world</h3>
-      </div>
+      <button class="btn" onclick="submit()">Calculate Total</button>
     </div>
     <script src="index.js"></script>
   </body>
